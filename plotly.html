@@ -350,6 +350,9 @@ div.tocify {
   <a href="about.html">About</a>
 </li>
 <li>
+  <a href="plotly.html">Plotly Graphs</a>
+</li>
+<li>
   <a href="mailto:th2723@cumc.columbia.edu">
     <span class="fa fa-envelope fa-lg"></span>
      
@@ -375,7 +378,41 @@ div.tocify {
 </div>
 
 
+<p>Here are some interactive plots produced by me using dataset Instacart.</p>
+<pre class="r"><code>library(tidyverse)</code></pre>
+<pre><code>## ── Attaching packages ──────────────────────────────────────────────── tidyverse 1.2.1 ──</code></pre>
+<pre><code>## ✔ ggplot2 3.2.1     ✔ purrr   0.3.2
+## ✔ tibble  2.1.3     ✔ dplyr   0.8.3
+## ✔ tidyr   1.0.0     ✔ stringr 1.3.1
+## ✔ readr   1.1.1     ✔ forcats 0.4.0</code></pre>
+<pre><code>## ── Conflicts ─────────────────────────────────────────────────── tidyverse_conflicts() ──
+## ✖ dplyr::filter() masks stats::filter()
+## ✖ dplyr::lag()    masks stats::lag()</code></pre>
+<pre class="r"><code>library(viridis)</code></pre>
+<pre><code>## Loading required package: viridisLite</code></pre>
+<pre class="r"><code>library(p8105.datasets)
 
+library(plotly)</code></pre>
+<pre><code>## 
+## Attaching package: &#39;plotly&#39;</code></pre>
+<pre><code>## The following object is masked from &#39;package:ggplot2&#39;:
+## 
+##     last_plot</code></pre>
+<pre><code>## The following object is masked from &#39;package:stats&#39;:
+## 
+##     filter</code></pre>
+<pre><code>## The following object is masked from &#39;package:graphics&#39;:
+## 
+##     layout</code></pre>
+<pre class="r"><code>data(&quot;instacart&quot;)</code></pre>
+<pre class="r"><code>set.seed(1)
+plot1 =
+  instacart %&gt;% 
+  count(aisle) %&gt;% 
+  filter(n &gt; 10000) %&gt;% 
+   mutate(aisle = fct_reorder(aisle, n)) %&gt;% 
+  plot_ly(
+    x = ~aisle, y = ~n, type = &quot;scatter&quot;, mode = &quot;markers&quot;)</code></pre>
 
 
 

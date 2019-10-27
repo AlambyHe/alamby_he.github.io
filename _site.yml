@@ -5,7 +5,7 @@ navbar:
   right:
     - text: "About"
       href: about.html
-    - text: "plotly"
+    - text: "Plotly Graphs"
       href: plotly.html
     - icon: fa-envelope fa-lg
       href: mailto:th2723@cumc.columbia.edu
@@ -13,4 +13,4 @@ navbar:
       href: http://github.com/AlambyHe/
 output:
   html_document:
-    theme:Journal
+    theme:journal

@@ -5,3 +5,29 @@ output:
     toc: true
     toc_float: true
 ---
+Here are some interactive plots produced by me using dataset Instacart. 
+
+
+```{r}
+library(tidyverse)
+library(viridis)
+library(p8105.datasets)
+
+library(plotly)
+```
+
+```{r}
+data("instacart")
+```
+
+```{r}
+set.seed(1)
+plot1 =
+  instacart %>% 
+  count(aisle) %>% 
+  filter(n > 10000) %>% 
+   mutate(aisle = fct_reorder(aisle, n)) %>% 
+  plot_ly(
+    x = ~aisle, y = ~n, type = "scatter", mode = "markers")
+```
+
