@@ -1,0 +1,14 @@
+---
+title: "Tianhui (Alamby) He"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+#About Me
+#Academic Experience
+#Professional Experience
+You can learn about me [here](about.html). 
+
+![](Images/ID.jpeg)
+
