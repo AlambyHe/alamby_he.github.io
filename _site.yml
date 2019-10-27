@@ -5,10 +5,12 @@ navbar:
   right:
     - text: "About"
       href: about.html
+    - text: "plotly"
+      href: plotly.html
     - icon: fa-envelope fa-lg
       href: mailto:th2723@cumc.columbia.edu
     - icon: fa-github fa-lg
       href: http://github.com/AlambyHe/
 output:
   html_document:
-    theme: Journal
+    theme:Journal
