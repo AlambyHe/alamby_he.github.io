@@ -347,7 +347,7 @@ div.tocify {
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="about.html">About</a>
+  <a href="about.html">About Me</a>
 </li>
 <li>
   <a href="plotly.html">Plotly Graphs</a>
@@ -380,12 +380,12 @@ div.tocify {
 
 <p>Here are some interactive plots produced by me using dataset Instacart.</p>
 <pre class="r"><code>library(tidyverse)</code></pre>
-<pre><code>## ── Attaching packages ──────────────────────────────────────────────── tidyverse 1.2.1 ──</code></pre>
+<pre><code>## ── Attaching packages ─────────────────────────────────────────── tidyverse 1.2.1 ──</code></pre>
 <pre><code>## ✔ ggplot2 3.2.1     ✔ purrr   0.3.2
 ## ✔ tibble  2.1.3     ✔ dplyr   0.8.3
 ## ✔ tidyr   1.0.0     ✔ stringr 1.3.1
 ## ✔ readr   1.1.1     ✔ forcats 0.4.0</code></pre>
-<pre><code>## ── Conflicts ─────────────────────────────────────────────────── tidyverse_conflicts() ──
+<pre><code>## ── Conflicts ────────────────────────────────────────────── tidyverse_conflicts() ──
 ## ✖ dplyr::filter() masks stats::filter()
 ## ✖ dplyr::lag()    masks stats::lag()</code></pre>
 <pre class="r"><code>library(viridis)</code></pre>
@@ -404,6 +404,20 @@ library(plotly)</code></pre>
 <pre><code>## The following object is masked from &#39;package:graphics&#39;:
 ## 
 ##     layout</code></pre>
+<pre class="r"><code>set.seed(1)
+
+data(nyc_airbnb)
+nyc_airbnb = 
+  nyc_airbnb %&gt;% 
+  mutate(rating = review_scores_location / 2) %&gt;%
+  select(
+    neighbourhood_group, neighbourhood, rating, price, room_type, lat, long) %&gt;%
+  filter(
+    !is.na(rating), 
+    neighbourhood_group == &quot;Manhattan&quot;,
+    room_type == &quot;Entire home/apt&quot;,
+    price %in% 100:500)  %&gt;% 
+  sample_n(5000)</code></pre>
 <pre class="r"><code>data(&quot;instacart&quot;)</code></pre>
 <pre class="r"><code>set.seed(1)
 plot1 =
