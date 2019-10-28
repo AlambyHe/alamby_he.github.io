@@ -11,6 +11,8 @@ navbar:
       href: mailto:th2723@cumc.columbia.edu
     - icon: fa-github fa-lg
       href: http://github.com/AlambyHe/
+    - icon: fa-linkedin fa-lg
+      href: https://www.linkedin.com/in/tianhui-he-5a8739164/
 output:
   html_document:
     theme: journal
