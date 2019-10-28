@@ -8,7 +8,7 @@ output:
 #About Me
 I am Tianhui He, also go by Alamby. My life inspiration stems from connections with people and ideas. I am delighted when reinterpreting these connections, reinventing and experimenting both themselves and new perspectives. Currently, I am a graduate student at Mailman School of Public Health at Columbia University with a Biostatistics major. I love to commnicate and experiment my ideas in Biostatistics and long for chances to make contributions to the pharmaceutical industry.
 
-You can learn about me [here](about.html). 
+You can learn about me [here](About.html). 
 
 [Here](plotly.html) are some experiments I did with data using R.
 
