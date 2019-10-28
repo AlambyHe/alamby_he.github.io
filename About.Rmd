@@ -9,12 +9,12 @@ output:
 
 <span class="test">
 <p style="font-size: large; float: left; display: inline-block;">Pfizer Inc.</p >
-<p style="float: right; display: inline-block;">07-8/2019|Shanghai, China</p ></span>
+<p style="float: right; display: inline-block;">07-08/2019|Shanghai, China</p ></span>
 
 <br><br>
 <p style="font-family: times, serif; font-size:11pt; font-style:italic;>Commercial Access Assistant</p>
 <ul>
-<li>Planned logistics for Pfizer and GSK merger for a Press Conference to market and promote health care products for 500 company employees</li>
+<li>Planned logistics for Pfizer and GSK merger for a Press Conference to market and promote health care products for 500 company employees</li>
 <li>Led and managed 6 interns in the commercial access department to communicate with other division to provide products to display during press conference</li>
 <li>Evaluated advertisement slogan to ensure compliance with government requirements which was successfully approved</li>
 <li>Devised a new database system to create a monthly budget for parcel delivery fees to reduce costs by 6%</li>
@@ -83,7 +83,7 @@ output:
 <br/><br>
 <p style="font-family: times, serif; font-size:11pt; font-style:italic;>Assistant Researcher, Member of Arts & Sciences Research Fellowship</p>
 <ul>
-<li>Utilized statistical tests to show how the distribution of democrats can affect the role of states and the Electoral College</li>
+<li>Utilized statistical tests such as randomization test to show how the distribution of democrats can affect the role of states and the Electoral College</li>
 <li>Made statistical decisions based on the simulated voting outcomes from the bootstrap algorithm with 10,000+ simulations</li>
 </ul>
 

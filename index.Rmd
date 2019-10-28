@@ -12,5 +12,6 @@ You can learn about me [here](about.html).
 
 [Here](plotly.html) are some experiments I did with data using R.
 
-![](Images/ID.jpeg)
+![](Images/me.JPG)
+
 
