@@ -23,24 +23,6 @@ Column {data-width=650}
 ### Chart A
 
 ```{r}
-data("instacart")
-set.seed(1)
-plot1 =
-  instacart %>% 
-  count(aisle) %>% 
-  filter(n > 10000) %>% 
-  mutate(aisle = fct_reorder(aisle, n)) %>% 
-  plot_ly(
-    x = ~aisle, y = ~n, type = "scatter", mode = "markers")
-plot1
-```
-
-Column {data-width=350}
------------------------------------------------------------------------
-
-### Chart B
-
-```{r}
 set.seed(1)
 plot2 =
   instacart %>% 
@@ -51,7 +33,10 @@ plot2 =
 plot2
 ```
 
-### Chart C
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
 
 ```{r}
 set.seed(1)
@@ -64,5 +49,21 @@ plot2 =
   top_n(20) %>% 
   plot_ly(x = ~user_id, y = ~n, color = ~user_id, type = "bar")
 plot2
+```
+
+
+### Chart C
+
+```{r}
+data("instacart")
+set.seed(1)
+plot1 =
+  instacart %>% 
+  count(aisle) %>% 
+  filter(n > 10000) %>% 
+  mutate(aisle = fct_reorder(aisle, n)) %>% 
+  plot_ly(
+    x = ~aisle, y = ~n, type = "scatter", mode = "markers")
+plot1
 ```
 
