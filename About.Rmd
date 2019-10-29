@@ -21,6 +21,7 @@ output:
 </ul>
 
 
+<br><br>
 <span class="test">
 <p style="font-size: large; float: left; display: inline-block;">ECOMICROWAVE (medical instrument producer) </p >
 <p style="float: right; display: inline-block;">07-08/2018|Nanjing, China</p ></span>
@@ -33,6 +34,7 @@ output:
 </ul>
 
 
+<br><br>
 <span class="test">
 <p style="font-size: large; float: left; display: inline-block;">Tigress Financial Partners </p >
 <p style="float: right; display: inline-block;">06-07/2017|New York, NY</p ></span>
@@ -44,6 +46,8 @@ output:
 </ul>
 
 
+
+<br><br>
 <span class="test">
 <p style="font-size: large; float: left; display: inline-block;">Pratt Institute & East China Normal University</p >
 <p style="float: right; display: inline-block;">06-07/2016|New York, NY</p ></span>
@@ -69,6 +73,8 @@ output:
 <li>Constructed a logistic function and used R Studio to model the homeownership of immigrants and its relevance to factors such as race, year of immigration and household income</li>
 </ul>
 
+
+<br><br>
 <p style="font-size: large; float: left; display: inline-block;">Data Visualization of Nanjing City’s Attractions[&nbsp;&nbsp;(click here to see)](https://alambyhe.github.io/math289/index.html)</p >
 <p style="float: right; display: inline-block;">2018-2019|Richmond, VA</p ></span>
 <br/><br>
@@ -78,6 +84,8 @@ output:
 <li>Classified and analyzed the information using Cluster Analysis to increase visualization and characterization</li>
 </ul>
 
+
+<br><br>
 <p style="font-size: large; float: left; display: inline-block;">US Election System</p >
 <p style="float: right; display: inline-block;">05-07/2018|Richmond, VA</p ></span>
 <br/><br>

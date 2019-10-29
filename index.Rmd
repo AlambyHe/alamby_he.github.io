@@ -10,8 +10,8 @@ I am Tianhui He, also go by Alamby. My life inspiration stems from connections w
 
 You can learn about me [here](About.html). 
 
-[Here](plotly.html) are some experiments I did with data using R.
+[Here](plotly.html) are some experiments I did with data using R. Click [here](flexdashboard.html) to see a flexdashboard of these graphs.
 
-![](Images/me.JPG)
+![](Images/me.JPG){width=300px}
 
 

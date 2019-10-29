@@ -1,25 +1,29 @@
 ---
-title: "plotly"
+title: "flexdashboard"
 output: 
-  html_document:
-    toc: true
-    toc_float: true
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
 ---
-Here are some interactive plots produced by me using dataset Instacart. 
 
-```{r}
+```{r setup, include=FALSE}
+library(flexdashboard)
+
 library(tidyverse)
 library(viridis)
 library(p8105.datasets)
 
 library(plotly)
+
 ```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
 
 ```{r}
 data("instacart")
-```
-This is a plot that shows the number of items ordered in each aisle.
-```{r}
 set.seed(1)
 plot1 =
   instacart %>% 
@@ -30,7 +34,11 @@ plot1 =
     x = ~aisle, y = ~n, type = "scatter", mode = "markers")
 plot1
 ```
-Next table shows how buying hour is distributed among my favorite food "Organic Half & Half","Organic Whole String Cheese","Organic Whole Strawberries","Coconut Water Kefir" and "Brown Rice". People tend to buy products during 10:00 - 18:00.
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
 
 ```{r}
 set.seed(1)
@@ -41,9 +49,10 @@ plot2 =
   plot_ly(y = ~order_hour_of_day, color = ~product_name, type = "box",
           colors = "Set2")
 plot2
-
 ```
-The last graph top20 user id ranked by the number of products they buy.
+
+### Chart C
+
 ```{r}
 set.seed(1)
 plot2 =
@@ -55,8 +64,5 @@ plot2 =
   top_n(20) %>% 
   plot_ly(x = ~user_id, y = ~n, color = ~user_id, type = "bar")
 plot2
-```
-```{r}
-
 ```
 
