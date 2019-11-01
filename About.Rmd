@@ -63,6 +63,8 @@ output:
 <br>
 <br>
 <font size="5">Academic Experiences</font>
+<br>
+<br>
 <span class="test">
 <p style="font-size: large; float: left; display: inline-block;">The Closing Gap of Homeownership between Natives and Immigrants </p >
 <p style="float: right; display: inline-block;">2018-2019|Richmond, VA</p ></span>
